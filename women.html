@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Women Watches - Timescape</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0e0e0; /* Grey background */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        /* Product Grid Styles */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 products per row */
+            gap: 30px;
+            max-width: 1200px;
+            width: 100%;
+            margin: 40px 20px;
+        }
+
+        /* Product Card Styles */
+        .product-card {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .product-card img {
+            width: 100%;          /* Ensures the image takes the full width of the card */
+            height: 250px;        /* Fixed height to make images uniform */
+            object-fit: cover;    /* Ensures aspect ratio is maintained */
+            border-radius: 8px;
+        }
+
+        .product-card h2 {
+            font-size: 1.5rem;
+            margin: 15px 0;
+            color: #333;
+        }
+
+        .product-card p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        /* Button Styles */
+        .product-btn {
+            background-color: #007BFF;
+            color: #fff;
+            font-size: 1rem;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.3s;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .product-btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Section Title */
+        .section-title {
+            font-size: 2rem;
+            margin: 40px 0;
+            text-align: center;
+            color: #333;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .products {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .products {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Women Watches</h1>
+        <p>Discover elegance, style, and precision</p>
+    </header>
+
+    <!-- Product Grid Section -->
+    <section id="women-products">
+        <h2 class="section-title">Our Featured Women's Watches</h2>
+        <div class="products">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="https://img.tatacliq.com/images/i13/437Wx649H/MP000000019156768_437Wx649H_202309092048411.jpeg" alt="Women Watch 1">
+                <h2>Timescape Classic</h2>
+                <p>A timeless design with a feminine touch. Perfect for all occasions.</p>
+                <div class="price">$249.99</div>
+                <a href="paymentall.html"><button class="product-btn" onclick="window.location.href='https://www.yourwebsite.com/buy-now/1'">Buy Now</button></a>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="https://www.jiomart.com/images/product/500x630/rvlljtoouz/iloz-luxury-new-elegant-look-classique-rose-gold-white-square-design-women-watches-ladies-crystal-bracelet-belt-watch-female-analog-wrist-watches-for-girls-product-images-rvlljtoouz-0-202405062308.jpg" alt="Women Watch 2">
+                <h2>Timescape Elegant</h2>
+                <p>Elegant, modern, and designed for sophisticated women.</p>
+                <div class="price">$199.99</div>
+                <a href="paymentall.html"><button class="product-btn" onclick="window.location.href='https://www.yourwebsite.com/buy-now/2'">Buy Now</button></a>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="https://imagescdn.thecollective.in/img/app/product/9/990280-13140682.jpg?w=600&auto=format" alt="Women Watch 3">
+                <h2>Timescape Luxe</h2>
+                <p>Luxury watch with a refined design and high-end features.</p>
+                <div class="price">$349.99</div>
+                <a href="paymentall.html"><button class="product-btn" onclick="window.location.href='https://www.yourwebsite.com/buy-now/3'">Buy Now</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript (for Cart functionality) -->
+    <script>
+        // Function to handle adding a product to the cart (this would be connected to your cart system)
+        function addToCart(productId) {
+            alert('Product ' + productId + ' added to cart!');
+            // You can replace the above alert with actual logic for adding the product to the cart
+            // Example: 
+            // cart.addItem(productId);
+        }
+    </script>
+
+</body>
+</html>
